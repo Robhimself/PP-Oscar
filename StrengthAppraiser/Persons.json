@@ -1,0 +1,15 @@
+var JSON = {
+    Persons: [
+        {
+            Name: "Oscar",
+            Strengths: [
+
+            ]
+        }
+
+    ]
+}
+
+
+
+

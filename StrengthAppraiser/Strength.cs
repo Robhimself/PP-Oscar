@@ -1,37 +1,54 @@
 public class Strength
 {
-    private int _AppreciationOfBeautyAndExcellence;
-    private int _Bravery;
-    private int _Creativity;
-    private int _Curiosity;
-    private int _Fairness;
-    private int _Forgiveness;
-    private int _Gratitude;
-    private int _Honesty;
-    private int _Hope;
-    private int _Humility;
-    private int _Humor;
-    private int _Judgment;
-    private int _Kindness;
-    private int _Leadership;
-    private int _Love;
-    private int _LoveOfLearning;
-    private int _Perseverance;
-    private int _Perspective;
-    private int _Prudence;
-    private int _SelfRegulation;
+
+    public string StrengthName {get; private set;}
+    public int StrengthScore {get; private set;}
+
+    public Strength(int index)
+    {
+        StrengthName = GetStrengthName(index);
+        StrengthScore = 0;
+    }
 
 
 
+    public void IncreaseStrength()
+    {
+        StrengthScore++;
+    }
 
-  public Strength()
-  {
-    Humor = 0;
+    
+    private string GetStrengthName(int index)
+    {
+        var nameList = new string[24]
+        {
+            "AppreciationOfBeautyAndExcellence",
+            "Bravery",
+            "Creativity",
+            "Curiosity",
+            "Fairness",
+            "Forgiveness",
+            "Gratitude",
+            "Honesty",
+            "Hope",
+            "Humility",
+            "Humor",
+            "Judgment",
+            "Kindness",
+            "Leadership",
+            "Love",
+            "LoveOfLearning",
+            "Perseverance",
+            "Perspective",
+            "Prudence",
+            "SelfRegulation",
+            "SocialIntelligence",
+            "Spirituality",
+            "TeamWork",
+            "Zest"
+        };
 
-  }
+        return nameList[index];
+    }
 
-  public void IncreaseStrenght(string strength)
-  {
-
-  }
 }

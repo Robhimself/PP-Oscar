@@ -38,12 +38,12 @@ var textToFile = $@"[{name}] = {
 }
 }"
 
+/*
+System.IO.File.WriteAllText (@"D:\path.txt", contents);
+If the file exists, this overwrites it.
+If the file does not exist, this creates it.
+Please make sure you have appropriate privileges to write at the location,
+otherwise you will get an exception.
 
-String str = "animal";
-String toFind = "n";
-int index = str.IndexOf("n");
-Console.WriteLine("Found '{0}' in '{1}' at position {2}",
-toFind, str, index);
-
-// The example displays the following output:
-//
+#SAVE NOTIFICATION/ALERT;
+*/
